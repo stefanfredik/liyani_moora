@@ -13,7 +13,8 @@ class User extends BaseController {
     var $meta = [
         'url'   => 'user',
         'title' => 'User',
-        'subtitle' => 'Halaman User'
+        'subtitle' => 'Halaman User',
+        "icon"      => '<i class="bi bi-people-fill"></i>'
     ];
 
 

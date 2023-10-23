@@ -14,10 +14,15 @@
     </a>
 
     <div class="sidenav-menu-heading">Data</div>
-    <!-- <a class="nav-link <?= url_is('/datapenduduk') ? 'active' : '' ?>" href="/datapenduduk">
+    <a class="nav-link <?= url_is('/datapenduduk') ? 'active' : '' ?>" href="/datapenduduk">
         <div class="nav-link-icon"><i data-feather="layers"></i></div>
         Data Penduduk
-    </a> -->
+    </a>
+
+    <a class="nav-link <?= url_is("/datapeserta") ? 'active' : '' ?>" href="/datapeserta">
+        <div class="nav-link-icon"><i data-feather="file-text"></i></div>
+        Data Pengajuan
+    </a>
 
     <a class="nav-link collapsed <?= url_is("/laporan*") ? 'active' : '' ?>" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#laporan" aria-expanded="false" aria-controls="collapseDashboards">
         <div class="nav-link-icon"><i data-feather="activity"></i></div>
@@ -30,4 +35,9 @@
             <a class="nav-link <?= url_is("/laporan/penduduk") ? 'active' : '' ?>" href="/laporan/penduduk">Penduduk</a>
         </nav>
     </div>
+
+    <a class="nav-link" href="/logout">
+        <div class="nav-link-icon"><i data-feather="log-out"></i></div>
+        Logout
+    </a>
 </div>

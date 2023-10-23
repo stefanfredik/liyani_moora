@@ -17,8 +17,7 @@
 
 <?php
 if (in_groups('admin')) echo view("/dashboard/dashboard/admin");
-if (in_groups('kepala-desa') || in_groups('pendamping')) echo view("/dashboard/dashboard/kepaladesa");
-if (in_groups('masyarakat')) echo view("/dashboard/dashboard/masyarakat");
+if (in_groups('kepala-desa') || in_groups('pendamping-blt')) echo view("/dashboard/dashboard/kepaladesa");
 ?>
 
 <?= $this->endSection(); ?>

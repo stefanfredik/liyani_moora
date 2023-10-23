@@ -1,11 +1,17 @@
-<header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+<header class="page-header page-header-dark bg-teal pb-10">
     <div class="container-xl px-4">
         <div class="page-header-content pt-4">
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto mt-4">
                     <h1 class="page-header-title">
-                        <div class="mr-2"><i class="bi bi-file-earmark fa-sm"></i></div>
-                        <?= @$title ?>
+                        <div class="">
+                            <?php if (isset($meta["icon"]) && !empty($meta["icon"])) :   ?>
+                                <?= $meta['icon'] ?>
+                            <?php else : ?>
+                                <i class="bi bi-file-earmark fa-sm"></i>
+                            <?php endif; ?>
+                        </div>
+                        <div class="mx-2"> <?= @$title ?></div>
                     </h1>
                     <div class="page-header-subtitle"><?= @$desc ?></div>
                 </div>

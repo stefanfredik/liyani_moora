@@ -1,5 +1,5 @@
 <div id="layoutSidenav_nav">
-    <nav class="sidenav shadow-right sidenav-light">
+    <nav class="sidenav shadow-right sidenav-dark">
 
         <div class="sidenav-menu">
             <div class="text-center my-2">
@@ -10,7 +10,7 @@
             <?php
             if (logged_in()) {
                 if (in_groups('admin')) echo view("/sidenavmenu/admin");
-                if (in_groups('kepala-desa') || in_groups('pendamping'))  echo view("/sidenavmenu/  kepaladesa");
+                if (in_groups('kepala-desa') || in_groups('pendamping-blt'))  echo view("/sidenavmenu/pendamping");
             }
             ?>
         </div>

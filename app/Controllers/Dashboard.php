@@ -14,7 +14,8 @@ class Dashboard extends BaseController {
     var $meta = [
         "url"   => 'dashboard',
         "title" => "Dashboard",
-        "subtitle" => "Halaman Dashboard"
+        "subtitle" => "Halaman Dashboard",
+        "icon"     => '<i class="bi bi-speedometer2"></i>'
     ];
 
     public function index() {

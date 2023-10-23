@@ -2,13 +2,13 @@
 <?= $this->section("content"); ?>
 <div class="row">
     <div class="col">
-        <div class="card border border-secondary">
+        <div class="card ">
             <div class="card-header">
                 <h3>Tabel Kriteria</h3>
             </div>
             <div id="data" class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered" width="100%" colspacing="0">
+                <div class="table table-bordered-responsive">
+                    <table table-bordered class="table table-bordered " width="100%" colspacing="0">
                         <thead>
                             <tr>
                                 <td>Kode</td>
@@ -47,7 +47,7 @@
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
-                    </table>
+                    </table table-bordered>
                 </div>
             </div>
         </div>
@@ -56,13 +56,13 @@
 <hr>
 <div class="row">
     <div class="col">
-        <div class="card border border-secondary">
+        <div class="card ">
             <div class="card-header">
                 <h3>Tabel Data</h3>
             </div>
             <div id="data" class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered" width="100%" colspacing="0">
+                <div class="table table-bordered-responsive">
+                    <table table-bordered class="table table-bordered " width="100%" colspacing="0">
                         <thead>
                             <tr>
                                 <th width="80px">No</th>
@@ -86,7 +86,7 @@
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
-                    </table>
+                    </table table-bordered>
                 </div>
             </div>
         </div>
@@ -97,13 +97,13 @@
 
 <div class="row">
     <div class="col">
-        <div class="card border border-secondary">
+        <div class="card ">
             <div class="card-header">
                 <h3>Tabel Bobot Kriteria</h3>
             </div>
             <div id="data" class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered" width="100%" colspacing="0">
+                <div class="table table-bordered-responsive">
+                    <table table-bordered class="table table-bordered " width="100%" colspacing="0">
                         <thead>
                             <tr>
                                 <th width="80px">No</th>
@@ -128,7 +128,7 @@
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
-                    </table>
+                    </table table-bordered>
                 </div>
             </div>
         </div>
@@ -140,13 +140,13 @@
 
 <div class="row">
     <div class="col">
-        <div class="card border border-secondary">
+        <div class="card ">
             <div class="card-header">
                 <h3>Tabel Normalisasi</h3>
             </div>
             <div id="data" class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered" width="100%" colspacing="0">
+                <div class="table table-bordered-responsive">
+                    <table table-bordered class="table table-bordered " width="100%" colspacing="0">
                         <thead>
                             <tr>
                                 <th width="80px">No</th>
@@ -170,7 +170,7 @@
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
-                    </table>
+                    </table table-bordered>
                 </div>
             </div>
         </div>
@@ -180,13 +180,13 @@
 
 <div class="row">
     <div class="col">
-        <div class="card border border-secondary">
+        <div class="card ">
             <div class="card-header">
                 <h3>Tabel Optimasi</h3>
             </div>
             <div id="data" class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered" width="100%" colspacing="0">
+                <div class="table table-bordered-responsive">
+                    <table table-bordered class="table table-bordered " width="100%" colspacing="0">
                         <thead>
                             <tr>
                                 <th width="80px">No</th>
@@ -213,7 +213,7 @@
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
-                    </table>
+                    </table table-bordered>
                 </div>
             </div>
         </div>
@@ -226,13 +226,13 @@
 
 <div class="row">
     <div class="col">
-        <div class="card border border-secondary">
+        <div class="card ">
             <div class="card-header">
                 <h3>Tabel Yi</h3>
             </div>
             <div id="data" class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered text-center" width="100%" colspacing="0">
+                <div class="table table-bordered-responsive">
+                    <table table-bordered class="table table-bordered  text-center" width="100%" colspacing="0">
                         <thead style="text-align: center;">
                             <tr>
                                 <th width="80px" rowspan="2">No</th>
@@ -267,7 +267,7 @@
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
-                    </table>
+                    </table table-bordered>
                 </div>
             </div>
         </div>
@@ -277,13 +277,13 @@
 <hr>
 <div class="row">
     <div class="col">
-        <div class="card border border-secondary">
+        <div class="card ">
             <div class="card-header">
                 <h3>Tabel Nilai</h3>
             </div>
             <div id="data" class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered" width="100%" colspacing="0">
+                <div class="table table-bordered-responsive">
+                    <table table-bordered class="table table-bordered " width="100%" colspacing="0">
                         <thead>
                             <tr>
                                 <th width="80px">No</th>
@@ -307,7 +307,7 @@
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
-                    </table>
+                    </table table-bordered>
                 </div>
             </div>
         </div>

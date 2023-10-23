@@ -23,7 +23,7 @@
                         </div>
                     </div>
 
-                    <div class="row mb-2">
+                    <!-- <div class="row mb-2">
                         <div class="col-md-4">
                             <label class="form-label">Periode Bantuan</label>
                         </div>
@@ -37,7 +37,7 @@
                                 <?php endfor; ?>
                             </select>
                         </div>
-                    </div>
+                    </div> -->
                     <hr class="">
 
                     <div class="row mb-2">

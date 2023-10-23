@@ -7,22 +7,20 @@ use App\Models\Users;
 use CodeIgniter\API\ResponseTrait;
 use Myth\Auth\Password;
 
-class Profile extends BaseController
-{
+class Profile extends BaseController {
     use ResponseTrait;
     var $meta = [
         'title'     => 'Profile',
         'subtitle'  => 'Halaman Profile',
         'url'       => 'profile',
+        'icon'      => '<i class="bi bi-people-fill"></i>'
     ];
 
-    public function __construct()
-    {
+    public function __construct() {
         $this->userModel = new Users();
     }
 
-    public function index()
-    {
+    public function index() {
         $data = [
             'meta' => $this->meta,
             "title" => 'Halaman Profile',
@@ -32,8 +30,7 @@ class Profile extends BaseController
         return view("profile/index", $data);
     }
 
-    public function gantipassword()
-    {
+    public function gantipassword() {
         $data = [
             'meta' => $this->meta,
             "title" => 'Ganti Password'
@@ -42,8 +39,7 @@ class Profile extends BaseController
         return view("profile/gantipassword", $data);
     }
 
-    public function doGantiPassword()
-    {
+    public function doGantiPassword() {
         $rules = [
             'password' => [
                 'rules' => 'required|min_length[8]',

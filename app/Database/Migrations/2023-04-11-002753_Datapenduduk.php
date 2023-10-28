@@ -4,16 +4,13 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Datapenduduk extends Migration
-{
-    public function up()
-    {
+class Datapenduduk extends Migration {
+    public function up() {
         $data = [
             'id' => [
                 'type'  => 'INT',
                 'auto_increment' => true
             ],
-
             'nik' => [
                 'type' => 'VARCHAR',
                 'constraint' => 32
@@ -27,12 +24,31 @@ class Datapenduduk extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => 64
             ],
+            'jenis_kelamin' => [
+                'type' => 'VARCHAR',
+                'constraint' => 128,
+                'null' => true
+            ],
+            'tanggal_lahir' => [
+                'type' => 'DATE',
+                'null' => true
+            ],
             'alamat' => [
                 'type' => 'VARCHAR',
                 'constraint' => 128,
                 'null' => true
             ],
-            'kelurahan' => [
+            'rt' => [
+                'type' => 'VARCHAR',
+                'constraint' => 128,
+                'null' => true
+            ],
+            'rw' => [
+                'type' => 'VARCHAR',
+                'constraint' => 128,
+                'null' => true
+            ],
+            'desa' => [
                 'type' => 'VARCHAR',
                 'constraint' => 128,
                 'null' => true
@@ -42,7 +58,6 @@ class Datapenduduk extends Migration
                 'constraint' => 128,
                 'null' => true
             ],
-
             'kabupaten' => [
                 'type' => 'VARCHAR',
                 'constraint' => 128,
@@ -60,8 +75,7 @@ class Datapenduduk extends Migration
         $this->forge->createTable('datapenduduk');
     }
 
-    public function down()
-    {
+    public function down() {
         $this->forge->dropTable('datapenduduk');
     }
 }

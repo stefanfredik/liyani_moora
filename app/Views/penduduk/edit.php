@@ -34,23 +34,31 @@
                         </div>
                     </div>
 
-                    <hr>
-                    <h4>Alamat</h4>
                     <div class="row mb-2">
                         <div class="col-md-4">
-                            <label class="form-label">Alamat</label>
+                            <label class="form-label">Jenis Kelamin</label>
                         </div>
                         <div class="col-md-8">
-                            <input value="<?= $penduduk['alamat'] ?>" name="alamat" type="text" class="form-control" required>
+                            <input value="<?= $penduduk['jenis_kelamin'] ?>" name="jenis_kelamin" type="text" class="form-control" required>
                         </div>
                     </div>
 
                     <div class="row mb-2">
                         <div class="col-md-4">
+                            <label class="form-label">Tanggal Lahir</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input value="<?= $penduduk['tanggal_lahir'] ?>" name="tanggal_lahir" type="date" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="row mb-2">
+                        <div class="col-md-4">
                             <label class="form-label">Desa</label>
                         </div>
                         <div class="col-md-8">
-                            <input value="<?= $penduduk['kelurahan'] ?>" name="desa" type="text" class="form-control" required>
+                            <input value="<?= $penduduk['desa'] ?>" name="desa" type="text" class="form-control" required>
                         </div>
                     </div>
 

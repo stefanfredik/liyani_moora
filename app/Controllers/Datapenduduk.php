@@ -6,8 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\PendudukModel;
 use CodeIgniter\API\ResponseTrait;
 
-class Datapenduduk extends BaseController
-{
+class Datapenduduk extends BaseController {
     use ResponseTrait;
 
     var $meta = [
@@ -17,13 +16,11 @@ class Datapenduduk extends BaseController
     ];
 
 
-    public function __construct()
-    {
+    public function __construct() {
         $this->pendudukModel = new PendudukModel();
     }
 
-    public function index()
-    {
+    public function index() {
 
         $data = [
             'title' => 'Data Penduduk',
@@ -34,8 +31,7 @@ class Datapenduduk extends BaseController
         return view('/penduduk/index', $data);
     }
 
-    public function tambah()
-    {
+    public function tambah() {
 
 
 
@@ -47,8 +43,7 @@ class Datapenduduk extends BaseController
         return view('/penduduk/tambah', $data);
     }
 
-    public function table()
-    {
+    public function table() {
         $data = [
             'title' => 'Data Penduduk',
             'meta'   => $this->meta,
@@ -60,8 +55,7 @@ class Datapenduduk extends BaseController
 
 
 
-    public function edit($id)
-    {
+    public function edit($id) {
         $data = [
             'title' => 'Edit Data Penduduk',
             'penduduk'  => $this->pendudukModel->find($id),
@@ -73,8 +67,7 @@ class Datapenduduk extends BaseController
 
 
 
-    public function detail($id)
-    {
+    public function detail($id) {
         $data = [
             'title' => 'Detail Data Penduduk',
             'penduduk'  => $this->pendudukModel->find($id),
@@ -84,8 +77,7 @@ class Datapenduduk extends BaseController
         return $this->respond(view('/penduduk/detail', $data), 200);
     }
 
-    public function store()
-    {
+    public function store() {
         $rules = [
             'no_kk'  => [
                 'rules'  => 'required|is_unique[datapenduduk.no_kk]',
@@ -114,8 +106,7 @@ class Datapenduduk extends BaseController
         return $this->respond($res, 200);
     }
 
-    public function update($id)
-    {
+    public function update($id) {
         $data = $this->request->getPost();
         $this->pendudukModel->update($id, $data);
 
@@ -128,8 +119,7 @@ class Datapenduduk extends BaseController
         return $this->respond($res, 200);
     }
 
-    public function delete($id)
-    {
+    public function delete($id) {
         $this->pendudukModel->delete($id);
 
         $res = [
@@ -144,8 +134,7 @@ class Datapenduduk extends BaseController
     // upload
 
     // upload
-    public function doupload()
-    {
+    public function doupload() {
 
         $rules = [
             'excel_file' => [
@@ -180,11 +169,15 @@ class Datapenduduk extends BaseController
             $dt["nik"] = $t[0];
             $dt["no_kk"] = $t[1];
             $dt["nama_lengkap"] = $t[2];
-            $dt["alamat"] = $t[3];
-            $dt["kelurahan"] = $t[4];
-            $dt["kecamatan"] = $t[5];
-            $dt["kabupaten"] = $t[6];
-            $dt["provinsi"] = $t[7];
+            $dt["jenis_kelamin"] = $t[3] == 1  ? "Laki-Laki" : "Wanita";
+            $dt["tanggal_lahir"] = $t[4];
+            $dt["alamat"] = $t[5];
+            $dt["rt"] = $t[6];
+            $dt["rw"] = $t[7];
+            $dt["desa"] = $t[8];
+            $dt["kecamatan"] = $t[9];
+            $dt["kabupaten"] = $t[10];
+            $dt["provinsi"] = $t[11];
             array_push($data, $dt);
         }
 
@@ -205,8 +198,7 @@ class Datapenduduk extends BaseController
     }
 
 
-    public function upload()
-    {
+    public function upload() {
         $data = [
             'title' => 'Upload Data Penduduk dari File Excel',
             'meta'   => $this->meta

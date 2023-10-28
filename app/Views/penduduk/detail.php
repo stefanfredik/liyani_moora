@@ -34,7 +34,26 @@
                     </div>
                 </div>
 
+                <div class="row mb-1">
+                    <div class="col-md-4">
+                        <label class="form-label">Jenis Kelamin</label>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?= $penduduk['jenis_kelamin'] ?></p>
+                    </div>
+                </div>
+
+                <div class="row mb-1">
+                    <div class="col-md-4">
+                        <label class="form-label">Tanggal Lahir</label>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?= $penduduk['tanggal_lahir'] ?></p>
+                    </div>
+                </div>
+
                 <hr>
+
                 <div class="row mb-1">
                     <div class="col-md-4">
                         <label class="form-label">Alamat</label>
@@ -46,10 +65,28 @@
 
                 <div class="row mb-1">
                     <div class="col-md-4">
+                        <label class="form-label">RT</label>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?= $penduduk['rt'] ?></p>
+                    </div>
+                </div>
+
+                <div class="row mb-1">
+                    <div class="col-md-4">
+                        <label class="form-label">RW</label>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?= $penduduk['rw'] ?></p>
+                    </div>
+                </div>
+
+                <div class="row mb-1">
+                    <div class="col-md-4">
                         <label class="form-label">Desa</label>
                     </div>
                     <div class="col-md-8">
-                        <p><?= $penduduk['kelurahan'] ?></p>
+                        <p><?= $penduduk['desa'] ?></p>
                     </div>
                 </div>
 

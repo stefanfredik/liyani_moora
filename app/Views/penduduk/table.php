@@ -6,11 +6,10 @@
                 <th>NIK</th>
                 <th>No. KK</th>
                 <th>Nama Lengkap</th>
-                <th>Kelurahan</th>
+                <th>Desa</th>
                 <th>Kecamatan</th>
                 <th>Kabupaten</th>
                 <th>Provinsi</th>
-                <th>Alamat</th>
                 <th>Opsi</th>
             </tr>
         </thead>
@@ -23,8 +22,7 @@
                     <td><?= $dt['nik'] ?></td>
                     <td><?= $dt['no_kk'] ?></td>
                     <td><?= $dt['nama_lengkap'] ?></td>
-                    <td><?= $dt['alamat'] ?></td>
-                    <td><?= $dt['kelurahan'] ?></td>
+                    <td><?= $dt['desa'] ?></td>
                     <td><?= $dt['kecamatan'] ?></td>
                     <td><?= $dt['kabupaten'] ?></td>
                     <td><?= $dt['provinsi'] ?></td>

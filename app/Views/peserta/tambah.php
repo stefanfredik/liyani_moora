@@ -17,7 +17,7 @@
                             <select class="form-control" name="tahun" id="" required>
                                 <option value="">Pilih Tahun</option>
                                 <?php for ($i = 2020; $i < 2030; $i++) : ?>
-                                    <option value="<?= $i; ?>"><?= $i; ?></option>
+                                    <option <?= $i == 2023 ? "selected" : "" ?> value="<?= $i; ?>"><?= $i; ?></option>
                                 <?php endfor; ?>
                             </select>
                         </div>

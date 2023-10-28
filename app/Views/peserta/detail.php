@@ -67,10 +67,28 @@
 
                     <div class="row mb-2">
                         <div class="col-md-4">
+                            <label class="form-label">RT</label>
+                        </div>
+                        <div class="col-md-8">
+                            <p><?= $peserta['rt']; ?></p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <label class="form-label">RW</label>
+                        </div>
+                        <div class="col-md-8">
+                            <p><?= $peserta['rw']; ?></p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
                             <label class="form-label">Desa/ Kelurahan</label>
                         </div>
                         <div class="col-md-8">
-                            <p><?= $peserta['kelurahan']; ?></p>
+                            <p><?= $peserta['desa']; ?></p>
                         </div>
                     </div>
 
@@ -105,7 +123,7 @@
 
                             <div class="col-md-8">
                                 <?php
-                                $k = 'k_' . $dt['id'];
+                                $k = $dt['keterangan'];
                                 foreach ($dataSubkriteria as $sk) :
                                     if ($dt['id'] == $sk['id_kriteria']) {
                                         if (isset($peserta[$k])) {

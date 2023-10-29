@@ -7,8 +7,9 @@
             <th class="text-center">NIK</th>
             <th class="text-center">No. KK</th>
             <th class="text-center">Nama</th>
+            <th class="text-center">Jenis Kelamin</th>
             <th class="text-center">Alamat</th>
-            <th class="text-center">Kelurahan</th>
+            <th class="text-center">Desa</th>
             <th class="text-center">Kecamatan</th>
             <th class="text-center">Kabupaten</th>
             <th class="text-center">Nilai</th>
@@ -29,8 +30,9 @@
                     <td><?= $dt['nik']; ?></td>
                     <td><?= $dt['no_kk']; ?></td>
                     <td><?= $dt['nama_lengkap']; ?></td>
+                    <td><?= $dt['jenis_kelamin']; ?></td>
                     <td><?= $dt['alamat']; ?></td>
-                    <td><?= $dt['kelurahan']; ?></td>
+                    <td><?= $dt['desa']; ?></td>
                     <td><?= $dt['kecamatan']; ?></td>
                     <td><?= $dt['kabupaten']; ?></td>
                     <td><?= $dt['kriteria_nilai']; ?></td>

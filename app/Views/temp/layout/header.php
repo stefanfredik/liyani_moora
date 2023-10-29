@@ -13,7 +13,7 @@
                         </div>
                         <div class="mx-2"> <?= @$title ?></div>
                     </h1>
-                    <div class="page-header-subtitle"><?= @$desc ?></div>
+                    <div class="page-header-subtitle"><?= @$meta["subtitle"] ?></div>
                 </div>
                 <!-- <div class="col-12 col-xl-auto mt-4">Optional page header content</div> -->
             </div>

@@ -27,7 +27,7 @@ class Laporan extends BaseController {
 
     public function bantuan() {
         $data = $this->data();
-        $this->meta['subtitle'] = "Data Dana Bantuan";
+        $this->meta['subtitle'] = "Data Penerima Bantuan";
 
         $data["meta"] =  $this->meta;
 
@@ -38,7 +38,7 @@ class Laporan extends BaseController {
 
     public function penduduk() {
         $data = $this->data();
-        $this->meta['subtitle'] = "Data Penduduk";
+        $this->meta['subtitle'] = "Data Peserta";
 
         $data["meta"] =  $this->meta;
 

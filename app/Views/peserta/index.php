@@ -3,7 +3,9 @@
 <?= $this->section("content"); ?>
 <div class="row">
     <div class="col">
-        <button data-url="<?= '/' . $meta['url'] . '/tambah'; ?>" class="my-2 btn btn-white" onclick="add(this)"><i class="bi bi-plus-circle mx-1"></i>Tambah Data</button>
+        <?php if (in_groups('admin') || (in_groups('pendamping-pkh'))) : ?>
+            <button data-url="<?= '/' . $meta['url'] . '/tambah'; ?>" class="mb-2 btn btn-white" onclick="add(this)"><i class="bi bi-plus-circle mx-1"></i>Tambah Data</button>
+        <?php endif; ?>
 
         <div class="card">
             <div class="card-header">

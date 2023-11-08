@@ -9,6 +9,8 @@
                 <th>No. KK</th>
                 <th>Nama Penduduk</th>
                 <th>Alamat</th>
+                <th>RT</th>
+                <th>RW</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -24,6 +26,8 @@
                     <td><?= $dt['no_kk']; ?></td>
                     <td><?= $dt['nama_lengkap']; ?></td>
                     <td><?= $dt['alamat']; ?></td>
+                    <td><?= $dt['rt']; ?></td>
+                    <td><?= $dt['rw']; ?></td>
 
                     <td style="text-align: center" width="120px">
                         <div class="btn-group" role="group" aria-label="Basic example">

@@ -11,7 +11,7 @@
             if (logged_in()) {
                 if (in_groups('admin')) echo view("/sidenavmenu/admin");
                 if (in_groups('kepala-desa')) echo view("/sidenavmenu/kepaladesa");
-                if (in_groups('pendamping-blt')) echo view("/sidenavmenu/pendamping");
+                if (in_groups('pendamping')) echo view("/sidenavmenu/pendamping");
             }
             ?>
         </div>

@@ -3,7 +3,7 @@
 <?= $this->section("content"); ?>
 <div class="row">
     <div class="col">
-        <?php if (in_groups('admin') || (in_groups('pendamping-pkh'))) : ?>
+        <?php if (in_groups('admin') || (in_groups('pendamping'))) : ?>
             <button data-url="<?= '/' . $meta['url'] . '/tambah'; ?>" class="mb-2 btn btn-white" onclick="add(this)"><i class="bi bi-plus-circle mx-1"></i>Tambah Data</button>
         <?php endif; ?>
 

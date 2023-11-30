@@ -55,9 +55,9 @@
 
 
 
-            <div style="display: inline-block;">
+            <!-- <div style="display: inline-block;">
                 <img width="60px" src="<?= $renderDataBali; ?>" alt="">
-            </div>
+            </div> -->
 
             <div style="display: inline-block; text-align: center; margin: 0 80px;">
                 <p style="margin: 0; font-weight: bold;">PEMERINTAH NUSA TENGGARA TIMUR</p>
@@ -66,9 +66,9 @@
 
             </div>
 
-            <div style="display: inline-block;">
+            <!-- <div style="display: inline-block;">
                 <img width="60px" src="<?= $renderLogo; ?>" alt="">
-            </div>
+            </div> -->
         </div>
         <hr>
 
@@ -83,7 +83,7 @@
         <?= $this->renderSection("table"); ?>
         <div class="footer">
             <div class="title">
-                Kepala Lurah
+                Kepala Desa
             </div>
 
             <div>

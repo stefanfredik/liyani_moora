@@ -65,6 +65,7 @@ class Laporan extends BaseController {
         $subkriteria = $this->subkriteriaModel->findAll();
 
         $moora = new Moora($peserta, $kriteria, $subkriteria);
+        $moora->sortPeserta();
         $moora->setRangking();
 
         $dataPeserta = $moora->getAllPeserta();

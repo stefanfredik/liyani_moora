@@ -87,7 +87,7 @@
             </div>
 
             <div>
-                <p style="font-weight: bold; margin: 0;">( -------------------- )</p>
+                <p style="font-weight: bold; margin: 0;">( Fransiskus Severius Vedi )</p>
                 <!-- <p style="margin: 0;">Pembi</p> -->
                 <!-- <p style="margin: 0;"></p> -->
             </div>
